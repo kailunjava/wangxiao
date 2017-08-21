@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src='../js/jquery/jquery.min.js'></script>
+    <link href='../js/bootstrap/css/bootstrap.min.css' rel='stylesheet' />
+    <script src='../js/bootstrap/js/bootstrap.min.js'></script>
+    <link href='../js/font-awesome/css/font-awesome.min.css' rel='stylesheet' />
+    <style type="text/css">
+    .navbar {
+        min-height: 90px;
+    }
+
+    .navbar-header img {
+        margin-left: 60px;
+        margin-top: 12px;
+        margin-right: 60px;
+    }
+
+    .navbar-nav {
+        margin: 7.5px -15px;
+        margin-top: 15px;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover {
+        background-color: #337ab7;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .buttons_login {
+        margin-top: 19px;
+        float: right;
+        margin-right: 45px;
+    }
+
+    .index_main {
+        width: 1226px;
+        margin-right: auto;
+        margin-left: auto;
+
+        height: 500px;
+        background-color: #000000;
+    }
+
+    .dropdown-menu .divider {
+        margin: 0;
+    }
+
+    .footer {
+        color: #999;
+        background-color: #333;
+        height: 294px;
+        margin-top: 70px;
+    }
+
+    .footer-bottom {
+        position: relative;
+        /*bottom: -66px;*/
+        /* text-align: center; */
+    }
+
+    .container {
+        width: 1226px;
+        /*height: 300px;*/
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .list-unstyled a,
+    .list-unstyled2 a {
+        color: #999;
+    }
+
+    .list-unstyled li {
+        margin-top: 25px;
+    }
+
+    .list-unstyled a:hover,
+    .list-unstyled2 a:hover {
+        color: #337ab7;
+    }
+
+    .list-unstyled2 {
+        list-style: none;
+        margin-top: 10px;
+        float: left;
+    }
+
+    .list-unstyled2 li {
+        margin-top: 5px;
+        margin-right: 10px;
+        float: left;
+    }
+
+    .about_font {
+        font-size: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <!-- <a class="navbar-brand"><h4>&emsp;&emsp;筑成教育</h4></a> -->
+            <img src="../images/wx-logo.png" class="ico_header" />
+        </div>
+        <ul class="nav navbar-nav">
+            <!-- 答疑 课程 题库 企业展示 最新活动 联系我们 加入我们 -->
+            <li role="presentation" id="nav_1" class="active"><a href="#"><h4>首页</h4></a></li>
+            <li role="presentation" id="nav_2"><a href="#"><h4>课程</h4></a></li>
+            <li role="presentation" id="nav_3"><a href="#"><h4>题库</h4></a></li>
+            <li role="presentation" id="nav_4"><a href="#"><h4>答疑</h4></a></li>
+            <li role="presentation" id="nav_5"><a href="#"><h4>最新活动</h4></a></li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <h4>关于我们 <span class="caret"></span></h4>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><h4>联系我们</h4></a></li>
+                    <li><a href="#"><h4>加入我们</h4></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><h4>企业展示</h4></a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="buttons_login">
+            <button type="button" class="btn btn-link">
+                <h5>登录</h5></button>
+            <button type="button" class="btn btn-link">
+                <h5>注册</h5></button>
+            <button type="button" class="btn btn-link">
+                <h5>我的</h5></button>
+        </div>
+    </nav>
+    <div class="index_main">
+    </div>
+    <!-- <hr class="content_footer"> -->
+    <div class="footer ">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="row about">
+                    <div class="col-xs-2">
+                        <div class="about_font">下载筑成教育客户端</div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href=""><i class="fa fa-fw fa-android fa-3x"></i>Android版</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-fw fa-apple fa-3x"></i>iPhone版</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 col-md-offset-1">
+                        <div class="about_font">关注我们</div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href=""><i class="fa fa-fw fa-weibo fa-3x"></i>新浪微博</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-fw fa-weixin fa-3x"></i>微信公众号</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-md-offset-1">
+                        <div class="about_font">帮助中心</div>
+                        <ul class="list-unstyled2">
+                            <li>
+                                <a href="">如何注册</a>
+                            </li>
+                            <li>
+                                <a href="">如何购买</a>
+                            </li>
+                            <li>
+                                <a href="">关于课件</a>
+                            </li>
+                            <li>
+                                <a href="">关于操作</a>
+                            </li>
+                        </ul>
+                        <div class="about_font" style="position: relative;left: -305px;top: 67px;margin-bottom: 67px;">关于筑成</div>
+                        <ul class="list-unstyled2" style="   ">
+                            <li>
+                                <a href="">筑成简介</a>
+                            </li>
+                            <li>
+                                <a href="">联系方式</a>
+                            </li>
+                            <li>
+                                <a href="">企业文化</a>
+                            </li>
+                            <li>
+                                <a href="">网校优势</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2">
+                    <div class="about_font"><i class="fa fa-fw fa-phone fa-2x"></i>客服热线<br><br>&emsp;&emsp;<big>0371-12345678</big></div>
+                    <br><br>
+                     <div class="about_font">&emsp;浙ICP备87878787号</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <div class="row footer-bottom">
+                <ul class="list-inline text-center">
+                    <li>Copyright ©2017. n 筑成教育 Software All Rights Reserved.</li>
+                    <li>筑成教育 版权所有</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
